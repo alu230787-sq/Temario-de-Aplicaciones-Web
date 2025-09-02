@@ -323,6 +323,59 @@ git log                 # Ver el historial de cambios
 ## 1. Branching (Creación de Ramas)  
 Las ramas en Git permiten desarrollar nuevas funcionalidades, corregir errores o experimentar sin afectar la rama principal (main o master). Cada rama es una copia del proyecto en un punto específico.  
 
+## Comandos básicos:
+
+bash
+git branch nueva-rama          # Crear una nueva rama  
+git checkout nueva-rama        # Cambiar a la nueva rama  
+git switch nueva-rama          # Alternativa moderna para cambiar de rama  
+
+## Ventajas:
+
+Permite trabajo paralelo en diferentes características.  
+Facilita la organización y gestión de cambios.  
+2. Trabajo en la Rama  
+En la nueva rama puedes realizar cambios, agregar archivos, modificarlos y hacer commits. Todo lo que hagas quedará registrado solo en esa rama.  
+
+bash  
+git add archivo_modificado.txt  
+git commit -m "Agrega nueva funcionalidad"  
+
+3. Merge (Fusión de Ramas)  
+Cuando la funcionalidad está lista y probada, se fusiona (merge) la rama al proyecto principal. Esto integra los cambios realizados en la rama secundaria.   
+
+## Comando para fusionar ramas:
+
+bash  
+git checkout main  
+git merge nueva-rama  
+Nota: Es recomendable actualizar la rama principal antes de fusionar (git pull), y resolver posibles conflictos si los hay.  
+
+4. Pull Requests (Solicitudes de Extracción)  
+En GitHub, el proceso de fusión se gestiona principalmente mediante Pull Requests (PR). Un PR es una solicitud para que los cambios de una rama se revisen y se integren en otra (por ejemplo, main).  
+
+Pasos básicos en GitHub:
+
+Subes tu rama al repositorio remoto:
+bash
+git push origin nueva-rama
+En GitHub, creas un Pull Request desde nueva-rama hacia main.
+Otros colaboradores pueden revisar, comentar y aprobar el PR.
+Cuando todo está listo, se realiza el merge desde la interfaz de GitHub.
+Ventajas de los Pull Requests:
+
+Revisión de código colaborativa.
+Discusión y seguimiento de cambios.
+Automatización de pruebas antes de fusionar.
+Resumen del flujo de trabajo:
+Crear una rama para cada nueva característica o corrección.
+Realizar los cambios y commits en esa rama.
+Subir la rama al repositorio remoto.
+Crear un Pull Request y solicitar revisión.
+Fusionar la rama a la principal tras la aprobación.
+
+
+
 # Propósito de Aprendizaje 2: Desarrollar componentes y funcionalidades de una aplicación web  
 # 1.-Diseño e implementación del frontend
 Maquetación/Wireframe/Mockup
