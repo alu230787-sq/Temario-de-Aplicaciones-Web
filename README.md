@@ -288,10 +288,37 @@ Sistema de gestión de bases de datos relacional. Permite almacenar, consultar y
 - **MySQL:** Almacena y gestiona los datos de la aplicación.  
 
 
-
-
 # 4.-Control de versiones   
-Git y GitHub  
+## Git y GitHub  
+### ¿Qué es Git?  
+**Git** es un sistema de control de versiones distribuido. Permite a los desarrolladores gestionar los cambios en el código fuente de manera eficiente, colaborando en proyectos y manteniendo un historial de modificaciones. Cada cambio que se realiza puede ser guardado (commit), revertido, y comparado con versiones anteriores.  
+
+**Características principales:**  
+- Guarda y rastrea cambios en archivos de texto y código.  
+- Permite trabajar en ramas (branches) independientes para desarrollar nuevas características sin afectar la versión principal del proyecto.  
+- Facilita la colaboración entre múltiples desarrolladores.  
+
+**Ejemplo de comandos básicos:**  
+```bash  
+git init                # Inicializar un repositorio Git  
+git add archivo.txt     # Añadir archivos al área de preparación  
+git commit -m "Mensaje" # Guardar los cambios en el repositorio  
+git status              # Ver el estado actual de los archivos  
+git log                 # Ver el historial de cambios  
+```
+
+### ¿Qué es GitHub?  
+**GitHub** es una plataforma web que aloja repositorios Git. Permite a los desarrolladores compartir proyectos, colaborar en el desarrollo y gestionar versiones de manera sencilla. Además, ofrece funcionalidades como el seguimiento de problemas (issues), revisión de código (pull requests), integración continua y despliegue automático.  
+
+**Ventajas de usar GitHub:**  
+- Almacenamiento centralizado de proyectos.  
+- Colaboración global: varios usuarios pueden trabajar en el mismo proyecto.  
+- Herramientas de revisión y control de calidad.  
+- Visualización de historial y cambios.  
+- Automatización de flujos de trabajo (CI/CD).  
+
+
+
 Flujo de trabajo con ramas (branching, merge, pull requests)
 
 # Propósito de Aprendizaje 2: Desarrollar componentes y funcionalidades de una aplicación web  
