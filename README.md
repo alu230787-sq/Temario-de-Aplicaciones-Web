@@ -224,14 +224,73 @@ El **API-first design** es una metodología en la que el diseño y la definició
 - **Postman:** Para probar y validar endpoints.  
 - **RAML / API Blueprint:** Otros lenguajes para definir APIs.  
 
-
-
-
-
 # 3. -Lenguajes y tecnologías fundamentales  
-HTML, CSS, JavaScript, PHP, MySQL  
+# HTML, CSS, JavaScript, PHP, MySQL  
 
-# 4.-Control de versiones  
+### HTML (HyperText Markup Language)
+Es el lenguaje de marcado principal para crear la estructura de las páginas web. Define los elementos como encabezados, párrafos, imágenes, enlaces, listas, formularios y mucho más.
+
+- **Propósito:** Estructura del contenido.
+- **Ejemplo:**
+  ```html
+  <h1>Bienvenido a mi sitio web</h1>
+  <p>Este es un párrafo.</p>
+  ```
+
+### CSS (Cascading Style Sheets)
+Se utiliza para darle estilo y presentación visual a las páginas web hechas con HTML. Permite definir colores, fuentes, márgenes, posiciones y adaptar el diseño a diferentes dispositivos (diseño responsivo).  
+
+- **Propósito:** Diseño y apariencia.  
+- **Ejemplo:**  
+  ```css  
+  body { background-color: #f0f0f0; }  
+  h1 { color: #333; }  
+  ```
+
+### JavaScript  
+Es el lenguaje de programación del navegador. Permite crear páginas web interactivas, dinámicas y responder a acciones del usuario sin recargar la página.  
+
+- **Propósito:** Interactividad y dinamismo.  
+- **Ejemplo:**  
+  ```javascript  
+  document.getElementById('boton').onclick = function() {  
+    alert('¡Has hecho clic!');  
+  };
+  ```
+
+### PHP (Hypertext Preprocessor)  
+Lenguaje de programación del lado del servidor. Permite crear páginas web dinámicas que interactúan con bases de datos, procesan formularios y generan contenido personalizado.  
+
+- **Propósito:** Lógica de servidor y generación dinámica de contenido.  
+- **Ejemplo:**  
+  ```php  
+  <?php  
+    echo "¡Hola, usuario!";  
+  ?>  
+  ```  
+
+### MySQL  
+Sistema de gestión de bases de datos relacional. Permite almacenar, consultar y manipular datos de forma eficiente. Es muy utilizado junto con PHP para crear aplicaciones web dinámicas.  
+
+- **Propósito:** Almacenamiento y gestión de datos.  
+- **Ejemplo de consulta SQL:**  
+  ```sql  
+  SELECT * FROM usuarios WHERE activo = 1;  
+  ```  
+
+---  
+
+**Resumen:**    
+- **HTML:** Estructura el contenido de la web.    
+- **CSS:** Da estilo y diseño visual.  
+- **JavaScript:** Añade interactividad en el navegador.  
+- **PHP:** Programa la lógica del servidor y genera contenido dinámico.   
+- **MySQL:** Almacena y gestiona los datos de la aplicación.  
+
+
+
+
+# 4.-Control de versiones   
 Git y GitHub  
 Flujo de trabajo con ramas (branching, merge, pull requests)
 
