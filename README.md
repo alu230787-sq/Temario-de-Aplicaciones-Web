@@ -188,6 +188,41 @@ Proporcionar datos a la capa de lógica bajo demanda. Ejemplo:
 Una base de datos que guarda la información de usuarios, productos, pedidos, etc.
 
 # REST y API-first design
+### ¿Qué es REST?
+**REST (Representational State Transfer)** es un estilo arquitectónico para el diseño de servicios web. Se basa en el uso de HTTP para la comunicación entre cliente y servidor, siguiendo principios simples y estandarizados.
+
+**Características clave de REST:**
+- **Recursos:** Todo se representa como un recurso (usuarios, productos, etc.) identificado por una URL.
+- **Métodos HTTP:** Se utilizan los métodos estándar de HTTP (GET, POST, PUT, DELETE) para realizar operaciones sobre los recursos.
+- **Sin estado (stateless):** Cada solicitud del cliente al servidor debe contener toda la información necesaria; el servidor no almacena el estado de la sesión.
+- **Formato de datos:** Usualmente se intercambian datos en formato JSON o XML.
+- **Escalabilidad:** Al ser sencillo y usar HTTP, REST facilita la escalabilidad y la integración.
+
+**Ejemplo de endpoints REST:**
+- `GET /productos` — Obtiene la lista de productos.
+- `POST /usuarios` — Crea un nuevo usuario.
+- `PUT /productos/5` — Actualiza el producto con ID 5.
+- `DELETE /usuarios/10` — Elimina el usuario con ID 10.
+
+### API-first design
+
+El **API-first design** es una metodología en la que el diseño y la definición de la API se realizan antes de comenzar el desarrollo de la aplicación. Esto permite que los equipos de frontend y backend trabajen de forma paralela y asegura una comunicación clara entre los componentes.  
+
+**Ventajas de API-first:**  
+- **Desarrollo paralelo:** Los equipos pueden avanzar al mismo tiempo sin esperar a que el otro termine su parte.  
+- **Documentación clara:** El contrato de la API se define (por ejemplo, usando Swagger/OpenAPI), facilitando la integración y el mantenimiento.  
+- **Consistencia:** Todas las aplicaciones y servicios se comunican siguiendo el mismo estándar.  
+- **Escalabilidad:** Permite añadir nuevas funcionalidades o integrar otros servicios fácilmente.  
+
+**Proceso típico:**  
+1. Se diseña y documenta la API (endpoints, formatos de datos, autenticación).  
+2. Se comparte la documentación con todos los equipos.  
+3. Los equipos desarrollan sus componentes basándose en la API definida.  
+
+**Herramientas comunes:**  
+- **Swagger / OpenAPI:** Para diseñar, documentar y probar APIs.  
+- **Postman:** Para probar y validar endpoints.  
+- **RAML / API Blueprint:** Otros lenguajes para definir APIs.  
 
 
 
