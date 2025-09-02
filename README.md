@@ -113,12 +113,51 @@ Algunas funciones pueden estar limitadas según el navegador.
 
 
 
+# 2.Arquitectura de aplicaciones web
+
+# Cliente-Servidor:  
+divide un sistema en dos roles: el cliente, que solicita información y servicios a través de un navegador, y el servidor, que procesa estas peticiones y devuelve los datos necesarios. Esta interacción, que se basa en protocolos como HTTP, permite al cliente mostrar una interfaz de usuario interactiva mientras el servidor gestiona la lógica de negocio, el almacenamiento de datos y la entrega de recursos de forma centralizada. 
+
+# Componentes principales  
+## Cliente:  
+Es la interfaz con la que el usuario interactúa directamente, generalmente a través de un navegador web. 
+Responsabilidades: Mostrar la interfaz gráfica, recibir la entrada del usuario y enviar peticiones al servidor. 
+
+## Ejemplos:  
+Un navegador web que muestra un sitio de compras en línea o solicita un documento. 
+
+## Servidor:
+Es la máquina o software que aloja los recursos y servicios. 
+
+## Responsabilidades:
+Procesar las solicitudes de los clientes, gestionar la base de datos y la lógica de la aplicación, y enviar los datos solicitados de vuelta al cliente.  
+Ejemplos: Un servidor web que entrega páginas HTML, CSS y JavaScript. 
+
+# Cómo funciona  
+1. Solicitud:  
+El cliente (navegador) envía una solicitud de un servicio o datos a través de la red, usando un protocolo como HTTP.  
+2. Procesamiento:  
+El servidor recibe la solicitud, la procesa y accede a la información necesaria o ejecuta la lógica de la aplicación.   
+3. Respuesta:  
+El servidor envía los datos o la respuesta solicitada de vuelta al cliente.   
+4. Presentación:  
+El cliente recibe la respuesta y la utiliza para actualizar la interfaz de usuario y presentar la información al usuario de forma dinámica.
+
+# Ventajas de esta arquitectura  
+Seguridad:  
+La centralización de los datos en el servidor permite una mejor gestión de la seguridad.  
+Escalabilidad:  
+Es posible escalar los recursos del servidor de forma independiente para satisfacer la demanda.  
+Modularidad:  
+La separación de funciones entre cliente y servidor facilita la gestión y el desarrollo de componentes.  
+Optimización:  
+Cada componente se enfoca en sus tareas específicas, lo que mejora el rendimiento general del sistema.  
+
+# Arquitectura de tres capas (Presentacion, logica, datos)
+## 
 
 
-# 2.Arquitectura de aplicaciones web  
-Cliente-Servidor
-Arquitectura de tres capas (presentación, lógica, datos)
-REST y API-first design
+
 
 # 3. -Lenguajes y tecnologías fundamentales  
 HTML, CSS, JavaScript, PHP, MySQL  
