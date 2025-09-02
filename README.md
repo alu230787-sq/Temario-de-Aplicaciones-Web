@@ -319,7 +319,9 @@ git log                 # Ver el historial de cambios
 
 
 
-Flujo de trabajo con ramas (branching, merge, pull requests)
+# Flujo de trabajo con ramas (branching, merge, pull requests)  
+## 1. Branching (Creación de Ramas)  
+Las ramas en Git permiten desarrollar nuevas funcionalidades, corregir errores o experimentar sin afectar la rama principal (main o master). Cada rama es una copia del proyecto en un punto específico.  
 
 # Propósito de Aprendizaje 2: Desarrollar componentes y funcionalidades de una aplicación web  
 # 1.-Diseño e implementación del frontend
