@@ -154,7 +154,41 @@ Optimización:
 Cada componente se enfoca en sus tareas específicas, lo que mejora el rendimiento general del sistema.  
 
 # Arquitectura de tres capas (Presentacion, logica, datos)
-## 
+# 1. Capa de Presentación
+
+## Qué es:  
+Es la interfaz con la que el usuario interactúa directamente.
+
+## Responsabilidades:  
+Mostrar la información al usuario (UI/UX).  
+Recoger la entrada del usuario (formularios, clics).  
+Enviar solicitudes al backend (generalmente vía HTTP/HTTPS). 
+
+## Ejemplo:  
+Un sitio web construido con HTML, CSS y JavaScript que muestra productos y permite realizar compras.  
+
+# 2. Capa de Lógica de Negocio (o capa intermedia)   
+## Qué es:  
+Gestiona las reglas y procesos de la aplicación, actuando como intermediario entre la presentación y los datos.  
+
+## Responsabilidades:  
+Procesar las solicitudes del usuario.  
+Aplicar reglas de negocio (validaciones, cálculos).  
+Decidir cómo interactuar con la base de datos.  
+# Ejemplo:  
+Un sistema que verifica si hay stock de un producto antes de permitir la compra, o que calcula el precio final con descuentos.
+
+# 3. Capa de Datos  
+## Qué es:  
+Gestiona el almacenamiento y recuperación de la información.  
+
+## Responsabilidades:  
+Acceder, modificar y almacenar datos (usando bases de datos como MySQL, PostgreSQL, MongoDB).
+Proporcionar datos a la capa de lógica bajo demanda. Ejemplo:
+Una base de datos que guarda la información de usuarios, productos, pedidos, etc.
+
+# REST y API-first design
+
 
 
 
